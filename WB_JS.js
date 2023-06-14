@@ -19,16 +19,6 @@ toolbar.addEventListener('click', e => {
     }
 });
 
-toolbar.addEventListener('change', e => {
-    if(e.target.id === 'stroke') {
-        ctx.strokeStyle = e.target.value;
-    }
-
-    if(e.target.id === 'lineWidth') {
-        lineWidth = e.target.value;
-    }
-    
-});
 
 const draw = (e) => {
     if(!isPainting) {
@@ -38,7 +28,7 @@ const draw = (e) => {
     ctx.lineWidth = lineWidth;
     ctx.lineCap = 'round';
 
-    ctx.lineTo(e.clientX - canvasOffsetX, e.clientY);
+    ctx.lineTo(e.clientX - canvasOffsetX, e.clientY - canvasOffsetY);
     ctx.stroke();
 }
 
