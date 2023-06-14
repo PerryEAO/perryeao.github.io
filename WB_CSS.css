@@ -39,13 +39,12 @@ h1 {
 }
 
 #toolbar button {
-    position: fixed;
-    left: 70px;
-    top: 35px;
+position: fixed;
+top: 32px;
     background-color: #ADDEDB;
     border-radius: 10px;
     border: 10px solid #3954A3;
     color: #3954A3;
-    font-size: 26px;
-    padding: 2px;
+    font-size: 20px;
+    padding: 10px;
 }
